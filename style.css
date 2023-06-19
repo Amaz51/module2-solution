@@ -1,0 +1,56 @@
+/* Reset some default styles */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set box-sizing to border-box for easier layout */
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color for the sections */
+.section {
+  background-color: #F2F2F2;
+  border: 1px solid #000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Set a different background color for the section title regions */
+.section h2 {
+  background-color: #FFC107;
+  margin: 0;
+  padding: 10px;
+  font-size: 125%;
+}
+
+body>h1{
+    text-align: center;
+}
+/* Responsive layout styles */
+.row {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.section {
+  width: 33.33%;
+  float: left;
+}
+
+@media (max-width: 991px) {
+  .section {
+    width: 50%;
+  }
+
+  .section:nth-child(3) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+  }
+}
